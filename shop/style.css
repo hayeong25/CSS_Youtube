@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+li {
+  list-style: none;
+}
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+/* ------------ Main ------------ */
+.container-top {
+  position: relative;
+  display: block;
+  height: 400px;
+}
+.top {
+  position: absolute;
+  width: 100%;
+  height: 280px;
+  top: 60px;
+}
+/* --------- Top banner --------- */
+.banner {
+  background-color: #e05d5d;
+  position: absolute;
+  text-align: center;
+  font-size: 0.7rem;
+  top: 0px;
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+}
+/* ------------ Logo ------------ */
+.logo {
+  display: inline-block;
+  position: relative;
+  left: 20%;
+  top: 50px;
+  border: 1px solid black;
+}
+.logo img {
+  width: 200px;
+  height: 200px;
+}
+/* ------------ Search ------------ */
+.search {
+  position: relative;
+  display: inline-block;
+  left: 25%;
+  bottom: 50px;
+  border: 1px solid black;
+}
+.search input {
+  border: none;
+  border-radius: 20px;
+  background-color: #e05d5d;
+  padding: 20px;
+  width: 300px;
+  height: 25px;
+  color: white;
+  font-size: 1em;
+  opacity: 0.5;
+}
+.search input:focus {
+  outline: 0;
+}
+.search i {
+  font-size: 1.5rem;
+  margin: 0 5px;
+  color: gray;
+}
+/* ------------ Main Login / Register ------------ */
+.main-login {
+  position: relative;
+  display: inline-block;
+  border: 1px solid black;
+  left: 32%;
+  width: 200px;
+  height: 100px;
+  text-align: center;
+}
+.main-login i {
+  font-size: 1.5rem;
+}
+.main-login a {
+  color: black;
+}
+/* ------------ Menubar ------------ */
+.menubar {
+  position: absolute;
+  background-color: rgb(71, 71, 71);
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 1.2rem;
+}
+.menubar li {
+  display: inline;
+  height: 60px;
+  line-height: 60px;
+  padding: 0 40px;
+}
+/* ------------ Hot Deal ------------ */
+.sales {
+  position: relative;
+  width: 80%;
+  height: 600px;
+  text-align: center;
+  top: 40%;
+  left: 13%;
+  margin: 150px 0;
+}
+.sales li {
+  position: relative;
+  float: left;
+  border: 1px solid black;
+  width: 200px;
+  height: 200px;
+}
+/* ------------ Footer ------------ */
+.footer {
+  bottom: 0;
+  text-align: center;
+  background-color: #e05d5d;
+  width: 100%;
+}
+.footer li {
+  display: inline-block;
+  height: 50px;
+  line-height: 50px;
+  margin: 0 5px;
+}

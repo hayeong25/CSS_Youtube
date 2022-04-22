@@ -1,0 +1,28 @@
+.card {
+  position: relative;
+  top: 200px;
+  left: 30%;
+  width: 400px;
+  height: 300px;
+  transition: 1.5s;
+  transform-style: preserve-3d; /* 자식 요소가 3D 공간 안에 있도록 설정 (평면공간은 flat) */
+}
+.card > div {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  perspective-origin: center; /* 원근감 기준점 : 가운데 */
+}
+.front {
+  background-color: orange;
+}
+.back {
+  background-color: lightblue;
+  transform: perspective(500px) rotateY(180deg);
+}
+.card:hover {
+  transform: perspective(250px) rotateY(180deg);
+}
